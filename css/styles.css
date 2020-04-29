@@ -1,0 +1,90 @@
+body {
+  margin: 0 15%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  width: 70%;
+}
+
+.subcabecera p {
+  margin-top: 0;
+}
+
+hr {
+  border: 1px solid black;
+  background-color: red;
+}
+
+main {
+  display: grid;
+  grid-template: 1fr / repeat(8, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.primera-columna {
+  grid-column: 1 / 3;
+  background-color: red;
+}
+
+.segunda-columna {
+  grid-column: 3 / 16;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.segunda-columna article:nth-of-type(1) {
+  background-color: blue;
+}
+
+.segunda-columna article:nth-of-type(2) {
+  background-color: aqua;
+}
+
+.segunda-columna article:nth-of-type(2) div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.segunda-columna article:nth-of-type(2) div p {
+  grid-column: auto;
+  border: 1px solid red;
+}
+
+.segunda-columna article:nth-of-type(3) {
+  background-color: blue;
+}
+
+.ultima-seccion {
+  display: grid;
+  grid-template: 1 / repeat(3, 1fr);
+}
+
+.ultima-seccion .texto{
+  grid-column: 1;
+}
+
+.capital {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background-color: blueviolet;
+}
+
+.ultima-seccion figure{
+  grid-column: 2 / 6;
+}
