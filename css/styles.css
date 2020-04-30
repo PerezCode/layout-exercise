@@ -21,6 +21,10 @@ header {
   width: 70%;
 }
 
+.first-line {
+  margin-bottom: 0;
+}
+
 .subcabecera p {
   margin-top: 0;
 }
