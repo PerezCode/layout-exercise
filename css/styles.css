@@ -139,26 +139,42 @@ main {
   margin: 0 5px;
 }
 
-.columna-derecha article:nth-of-type(3) {
-  background-color: blue;
+.last-article h2 {
+  font-size: 23px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 0;
 }
 
-.ultima-seccion {
-  display: grid;
-  grid-template: 1 / repeat(3, 1fr);
+.last-article .text-and-image {
+  display: flex;
 }
 
-.ultima-seccion .texto{
-  grid-column: 1;
+.last-article .text-and-image .text{
+  width: 48%;
+  margin-right: 10px;
 }
 
-.capital {
+.last-article .text-and-image .text p {
+  text-align: start;
+}
+
+.square {
   width: 60px;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 0 0;
   float: left;
-  background-color: blueviolet;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.ultima-seccion figure{
-  grid-column: 2 / 6;
+.square span {
+  border-bottom: 2px solid black;
+}
+
+.last-article .text-and-image figure{
+  margin: 0;
 }
