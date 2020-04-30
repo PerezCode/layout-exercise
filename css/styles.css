@@ -7,6 +7,7 @@ img {
 }
 
 p {
+  margin: 0;
   font-size: 15px;
   text-align: justify;
 }
@@ -105,18 +106,37 @@ main {
   margin: 7px 0;
 }
 
-.columna-derecha article:nth-of-type(2) {
-  background-color: aqua;
+.central-article {
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
 }
 
-.columna-derecha article:nth-of-type(2) div {
+.central-article h2{
+  font-size: 22px;
+  margin: 10px 0 5px 0;
+  font-style: italic;
+}
+
+.central-article > div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.columna-derecha article:nth-of-type(2) div p {
-  grid-column: auto;
-  border: 1px solid red;
+.central-article > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.central-article > div > div > h4{
+  border-top: 2px solid black;
+  padding-top: 7px;
+  margin: 0 0 7px 0;
+  font-weight: 400;
+}
+
+.central-article p{
+  margin: 0 5px;
 }
 
 .columna-derecha article:nth-of-type(3) {
